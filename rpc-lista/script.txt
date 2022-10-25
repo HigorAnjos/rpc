@@ -1,0 +1,4 @@
+rpcgen -C lista.x
+gcc -c *.c
+gcc -o client cliente.o lista_clnt.o lista_xdr.o -lnsl
+gcc -o server servidor.o lista_svc.o lista_xdr.o -lrpcsvc -lnsl
