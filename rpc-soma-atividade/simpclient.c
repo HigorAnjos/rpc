@@ -41,9 +41,9 @@ int sub( CLIENT *clnt, int x, int y) {
   return(*result);
 }
 
-int divi( CLIENT *clnt, int x, int y) {
+float divi( CLIENT *clnt, int x, int y) {
   operands ops;
-  int *result;
+  float *result;
 
   /* Gather everything into a single data structure to send to the server */
   ops.x = x;
@@ -104,7 +104,7 @@ int main( int argc, char *argv[]) {
   printf("%d + %d = %d\n",x,y, add(clnt,x,y));
   printf("%d - %d = %d\n",x,y, sub(clnt,x,y));
   printf("%d * %d = %d\n",x,y, mut(clnt,x,y));
-  printf("%d / %d = %d\n",x,y, divi(clnt,x,y));
+  printf("%d / %d = %f\n",x,y, divi(clnt,x,y));
   return(0);
 }
 

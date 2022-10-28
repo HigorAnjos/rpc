@@ -49,7 +49,7 @@ simp_prog_1(struct svc_req *rqstp, register SVCXPRT *transp)
 
 	case DIV:
 		_xdr_argument = (xdrproc_t) xdr_operands;
-		_xdr_result = (xdrproc_t) xdr_int;
+		_xdr_result = (xdrproc_t) xdr_float;
 		local = (char *(*)(char *, struct svc_req *)) div_1_svc;
 		break;
 

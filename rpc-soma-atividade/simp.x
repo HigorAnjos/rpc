@@ -47,7 +47,7 @@ program SIMP_PROG {
    version SIMP_VERSION {
      int ADD(operands) = 1;
      int SUB(operands) = 2;
-     int DIV(operands) = 3;
+     float DIV(operands) = 3;
      int MUT(operands) = 4;
    } = VERSION_NUMBER;
 } = 555555555;
@@ -98,7 +98,7 @@ to have prototypes like this:
 
 int *add_1_svc(operands*, struct svc_req *);
 int *sub_1_svc(operands*, struct svc_req *);
-int *div_1_svc(operands*, struct svc_req *);
+float *div_1_svc(operands*, struct svc_req *);
 int *mut_1_svc(operands*, struct svc_req *);
 
 

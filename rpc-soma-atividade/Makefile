@@ -5,4 +5,4 @@ all:
 	gcc -o server simpservice.o simp_svc.o simp_xdr.o -lrpcsvc -lnsl
 	./server &
 
-# ./client 127.0.0.1 5 5
+# ./client 127.0.0.1 5 2

@@ -32,8 +32,8 @@ extern  int * add_1_svc(operands *, struct svc_req *);
 extern  int * sub_1(operands *, CLIENT *);
 extern  int * sub_1_svc(operands *, struct svc_req *);
 #define DIV 3
-extern  int * div_1(operands *, CLIENT *);
-extern  int * div_1_svc(operands *, struct svc_req *);
+extern  float * div_1(operands *, CLIENT *);
+extern  float * div_1_svc(operands *, struct svc_req *);
 #define MUT 4
 extern  int * mut_1(operands *, CLIENT *);
 extern  int * mut_1_svc(operands *, struct svc_req *);
@@ -47,8 +47,8 @@ extern  int * add_1_svc();
 extern  int * sub_1();
 extern  int * sub_1_svc();
 #define DIV 3
-extern  int * div_1();
-extern  int * div_1_svc();
+extern  float * div_1();
+extern  float * div_1_svc();
 #define MUT 4
 extern  int * mut_1();
 extern  int * mut_1_svc();

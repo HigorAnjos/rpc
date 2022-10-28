@@ -41,15 +41,15 @@ sub_1_svc(operands *argp, struct svc_req *rqstp)
 	return (&result);
 }
 
-int *
+float *
 div_1_svc(operands *argp, struct svc_req *rqstp)
 {
-	static int  result;
+	static float  result;
 
 	printf("Got request: Divisao %d, %d\n",
 	       argp->x, argp->y);
 
-	result = argp->x / argp->y;
+	result = argp->x / (float)argp->y;
 
 
 	return (&result);
